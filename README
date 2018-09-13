@@ -1,0 +1,17 @@
+This program makes and manipulates a process chain as described Exercise 3.8 on p. 87 of the text: UNIX Systems Programming Communication, Concurrency, and Threads by Robbins and Robbins. Each exercise that warrants as such can be found on its respective branch (numbered 1-8).
+
+It takes the process chain program from p. 67 and manipulates it in order to observe process limits, the sleep, fprintf, wait, and the resulting effects of changing these variables via user input through the command line using getopt. 
+
+To create the executable program, type 'make' into the command line. This will create a target called 'ass1'
+
+To run the program type ./ass1 with the arguments -n x, -h, or -p. The -h option displays the help message indicating the type of input it expects. 
+
+
+
+Below are the git repository logs that can be found at https://github.com/rlwprog/process_chains
+
+commit c3dc2e85b2d6142784dfb0646405ee47dc30dbc4
+Author: Ricky <rickywilsonprog@gmail.com>
+Date:   Wed Sep 12 21:49:58 2018 -0500
+
+    First working version of process chain with makefile
