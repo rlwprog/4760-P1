@@ -1,0 +1,73 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Answers to Exercise 3.8 on p. 87 of Unix Systems Programming\
+\
+\
+1.)  As described in the book, the first process generated has a parent ID of an actual process. After the second process is generated, each subsequent child is an orphan due to each parent terminating itself so the parent ID of each new child is 1. The last process has a child ID of 0.\
+\
+Below are instances of running the program with arguments of 3, 10, and 20.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf2 \cb3 \CocoaLigature0 ./ass1 -n 3\
+i:1 process ID:85529 parent ID:97613 child ID:85532\
+i:2 process ID:85532 parent ID:1 child ID:85533\
+i:3 process ID:85533 parent ID:1 child ID:0\
+Rickys-MacBook-Pro:Project1 ricky$ 
+\f0\fs24 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+
+\f1\fs22 \cf2 \cb3 \CocoaLigature0  ./ass1 -n 10\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+i:1 process ID:91267 parent ID:97613 child ID:91269\
+i:2 process ID:91269 parent ID:1 child ID:91271\
+i:3 process ID:91271 parent ID:1 child ID:91272\
+i:4 process ID:91272 parent ID:1 child ID:91273\
+i:5 process ID:91273 parent ID:1 child ID:91274\
+i:6 process ID:91274 parent ID:1 child ID:91275\
+i:7 process ID:91275 parent ID:1 child ID:91277\
+i:8 process ID:91277 parent ID:1 child ID:91278\
+i:9 process ID:91278 parent ID:1 child ID:91279\
+i:10 process ID:91279 parent ID:1 child ID:0\
+\
+./ass1 -n 20\
+i:1 process ID:3431 parent ID:97613 child ID:3434\
+i:2 process ID:3434 parent ID:1 child ID:3435\
+i:3 process ID:3435 parent ID:1 child ID:3437\
+i:4 process ID:3437 parent ID:1 child ID:3438\
+i:5 process ID:3438 parent ID:1 child ID:3439\
+i:6 process ID:3439 parent ID:1 child ID:3440\
+i:7 process ID:3440 parent ID:1 child ID:3441\
+i:8 process ID:3441 parent ID:1 child ID:3442\
+i:9 process ID:3442 parent ID:1 child ID:3443\
+i:10 process ID:3443 parent ID:1 child ID:3444\
+i:11 process ID:3444 parent ID:1 child ID:3446\
+i:12 process ID:3446 parent ID:1 child ID:3447\
+i:13 process ID:3447 parent ID:1 child ID:3448\
+i:14 process ID:3448 parent ID:1 child ID:3449\
+i:15 process ID:3449 parent ID:1 child ID:3451\
+i:16 process ID:3451 parent ID:1 child ID:3452\
+i:17 process ID:3452 parent ID:1 child ID:3453\
+i:18 process ID:3453 parent ID:1 child ID:3454\
+i:19 process ID:3454 parent ID:1 child ID:3456\
+i:20 process ID:3456 parent ID:1 child ID:0\
+\
+2.) Actual process ID\'92s when an argument of 4 is passed:\
+\
+./ass1 -n 4\
+i:1 process ID:56047 \
+i:2 process ID:56050 \
+i:3 process ID:56052 \
+i:4 process ID:56053 \
+
+\f0\fs24 \cf0 \cb1 \CocoaLigature1 \
+3.)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+}
