@@ -1,6 +1,14 @@
+commit e98772076386c4796a8ac2c822b92ea569fbd4dd
+Author: Ricky <rickywilsonprog@gmail.com>
+Date:   Wed Sep 12 23:14:58 2018 -0500
 
+    Added getopt with n, h, p arguments
 
+commit 13d1f264e2a629a1f4fd213d4c5cb0235f0cc7ad
+Author: Ricky <rickywilsonprog@gmail.com>
+Date:   Wed Sep 12 22:18:05 2018 -0500
 
+    README
 
 commit 75d4293dab2951a6596053655798e5f1781e4a0a
 Author: Ricky <rickywilsonprog@gmail.com>
